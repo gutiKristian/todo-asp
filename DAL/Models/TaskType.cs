@@ -3,7 +3,7 @@
 
 namespace DAL.Models
 {
-    public class Type
+    public class TaskType
     {
         [Key]
         public int Id { get; set; }
