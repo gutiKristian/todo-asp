@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Models
 {
-    public class TaskTodo
+    public class Item
     {
         [Key]
         public int Id { get; set; }
@@ -17,14 +17,19 @@ namespace DAL.Models
         public string Name { get; set; }
         
         public string? Description { get; set; }
-        
-        public TaskType? Type { get; set; }
 
         public DateTime CreatedAt { get; set; }
 
         public DateTime? DueTo { get; set; }
 
         public DateTime? DoneAt { get; set; }
+
+        public int ItemCollectionId { get; set; }
+
+        public ItemCollection ItemCollection { get; set; } = null!;
+
+        // Many to Many
+        public List<ItemType> ItemTypes { get; set; } = new();
 
     }
 }

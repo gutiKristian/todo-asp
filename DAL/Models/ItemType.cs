@@ -3,7 +3,7 @@
 
 namespace DAL.Models
 {
-    public class TaskType
+    public class ItemType
     {
         [Key]
         public int Id { get; set; }
@@ -13,5 +13,8 @@ namespace DAL.Models
         
         [MinLength(6), MaxLength(6)]
         public string ColorHex { get; set; }
+
+        // Many to Many
+        public List<Item> Items { get; set; } = new();
     }
 }
