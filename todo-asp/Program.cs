@@ -1,3 +1,29 @@
+using ConfigurationManager = System.Configuration.ConfigurationManager;
+using DAL;
+
+
+// main
+var config = ConfigurationManager.AppSettings;
+
+if (config == null || config.Count == 0)
+{
+    throw new Exception("Config is missing or empty");
+}
+
+
+var conenctionString = config["ConnectionString"];
+
+if (conenctionString == null)
+{
+    throw new Exception("Connection string not found !");
+}
+
+using (var db = new TodoDbContext(conenctionString))
+{
+    db.Database.EnsureDeleted();
+    db.Database.EnsureCreated();
+}
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
