@@ -5,7 +5,11 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-asp", "todo-asp\todo-asp.csproj", "{CD7FFA29-FACB-43DE-8F76-E53CAB6C0800}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{89D212E2-AF0A-4534-8C8A-53C23486017D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{89D212E2-AF0A-4534-8C8A-53C23486017D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{15462D4B-DC9D-45CA-8874-68CE7DD76713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.EFCore", "Infrastructure.EFCore\Infrastructure.EFCore.csproj", "{C4EE1C60-6443-44D1-93A2-450BC48227CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{89D212E2-AF0A-4534-8C8A-53C23486017D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89D212E2-AF0A-4534-8C8A-53C23486017D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89D212E2-AF0A-4534-8C8A-53C23486017D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15462D4B-DC9D-45CA-8874-68CE7DD76713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15462D4B-DC9D-45CA-8874-68CE7DD76713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15462D4B-DC9D-45CA-8874-68CE7DD76713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15462D4B-DC9D-45CA-8874-68CE7DD76713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4EE1C60-6443-44D1-93A2-450BC48227CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4EE1C60-6443-44D1-93A2-450BC48227CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4EE1C60-6443-44D1-93A2-450BC48227CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4EE1C60-6443-44D1-93A2-450BC48227CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
